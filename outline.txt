@@ -1,0 +1,64 @@
+Rogue-like-ish naval combat/trade/exploration/stuff game
+
+TO LEARN
+	- Pathing
+	- Procedural world gen (tactical map gen certainly, perhaps macro world view to an extent as well)
+			- Weather systems, current, etc.
+	- AI
+		- ?? 
+		- both in tactical and ship maps
+			- pirates doing pirate things
+				- swinging on ropes n shit
+				
+
+Features
+	- World map
+	- Tactical map
+	- FTL-like ship level map 
+		- pathing most relevant
+	- Day/night cycle
+		- Sailors' shift management
+			- i.e. shifts at helm/lookout overnight and tradeoffs
+		
+
+
+World Map Features
+	- Turn-based
+	- day/night cycle
+	- overall ship management
+		- sailor health/food/rest/morale
+		- supplies
+		- arsenal layout
+	- towns/ports/vessels
+		- trade menus and social panels
+		
+Tactical Map Features
+	- Turn-based elements
+		- perhaps timed turns or something similar to maintain a tempo
+	- ship management
+		- morale
+		- minor arsenal layout
+	- 
+Ship-level Map Features
+	- unit pathing
+	- combat system
+	- varying units (supplement basic, passive ship functions - cooking food, sailing ship, etc.)
+		combat
+			- rifleman, captain, marine
+			- swashbuckler
+		
+		not directly combat
+			- trader, diplomat
+			- doctor/medic
+			- engineer / repair units
+	- other 
+	
+	
+To be determined
+	- game length
+	- game goal / win condition / score
+		- leaderboards
+	- replay value
+		- unlocks b/w playthroughs
+		
+		
