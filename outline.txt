@@ -62,3 +62,6 @@ To be determined
 		- unlocks b/w playthroughs
 		
 		
+Random Ideas
+	-Blackbeard - Random chance to encounter blackbeard's ship
+	-Random pirate encounter to unlock a treasure map
