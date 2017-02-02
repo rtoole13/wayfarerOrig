@@ -5,6 +5,7 @@ using System;
 
 public class Grid : MonoBehaviour {
 
+    public bool displayGridGizmos;
     public LayerMask unwalkableMask;
     public float nodeRadius;
     public Node[,] grid;
@@ -14,13 +15,21 @@ public class Grid : MonoBehaviour {
     private float nodeDiameter;
     private int gridSizeX, gridSizeY;
 
-    void Start()
+    void Awake()
     {
         mapGenerator = GetComponent<MapGenerator>();
         nodeDiameter = nodeRadius * 2;
         gridSizeX = Mathf.RoundToInt(mapGenerator.width / nodeDiameter);
         gridSizeY = Mathf.RoundToInt(mapGenerator.height / nodeDiameter);
         CreateGrid();
+    }
+
+    public int MaxSize
+    {
+        get
+        {
+            return gridSizeX * gridSizeY;
+        }
     }
 
     private void CreateGrid()
@@ -82,19 +91,14 @@ public class Grid : MonoBehaviour {
         return grid[x, y];
     }
 
-    public List<Node> path;
     void OnDrawGizmos()
     {
-        if(grid != null)
+        if(grid != null && displayGridGizmos)
         {
             Gizmos.DrawWireCube(transform.position, new Vector3(mapGenerator.width, mapGenerator.height, 1));
-            foreach(Node n in grid)
+            foreach (Node n in grid)
             {
-                Gizmos.color = (n.walkable) ? Color.white : Color.red;
-                if(path != null && path.Contains(n))
-                {
-                    Gizmos.color = Color.cyan;
-                }
+                Gizmos.color = (n.walkable) ? Color.white : Color.red;  
                 Gizmos.DrawCube(n.worldPosition, Vector3.one * (nodeDiameter));
             }
         }
