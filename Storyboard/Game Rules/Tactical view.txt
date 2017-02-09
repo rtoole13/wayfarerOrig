@@ -1,0 +1,16 @@
+Tactical view
+
+-Player starts at one point on the map, can exit on several(maybe only one?)
+-Entirely turn based
+
+-Hex based map
+  - Hexs each cost a "travel point" to move to
+  - Navigation around this map similar to Civ
+  - Winds and ocean currents can give a bonus or remove travel points
+  - Some hexes have encounters on them(treasure chests/damaged ships/sea monsters)
+  
+-Combat?
+  - Long ranged cannons can fire in this mode, but use cannon balls(limited resource)
+-Ship
+	- Part of the view will show a cross section of the ship
+	- From this view the player will be able to manage the crew and reassign slots

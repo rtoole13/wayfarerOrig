@@ -1,0 +1,5 @@
+WorldMap view
+
+-Hex based?
+-Each tile represents a tactical map
+-Towns/ports to purchase repairs/new crew members1

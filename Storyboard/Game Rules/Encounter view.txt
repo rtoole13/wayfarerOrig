@@ -1,0 +1,19 @@
+Encounter view
+
+This view zooms in on 1 hex tile from the tactical view
+
+Main view
+Top down view of your ship and other objects located on that tile
+Mini view
+Side cut of your ship
+
+
+-Combat
+  -Combat is live action, though the player can pause at any time
+  -Weapons and crew memembers have skills that have cooldowns
+  -Can use all weapons at disposal
+     -Ropes launcher to tie enemy sails
+     -Harpoons
+  -Can board enemy ship once close enough
+  -Cannons still use cannonballs(limited resource)
+ 
